@@ -1,0 +1,43 @@
+@import url("https://henriquesb-1.github.io/Calculadoras/Subpages/Content/common-css/menu-pages-icon.css");
+
+:root {
+    --transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.2s;
+}
+
+.all-pages-menu {
+    border: 2px groove rgba(50, 50, 220, 0.7);
+    box-shadow: 2px 4px 4px 2px rgba(50, 50, 190, 0.4);
+    width: fit-content;
+    border-radius: 5px;
+    background-color: rgba(0, 20, 20, 0.8);
+    transition: var(--transition);
+}
+
+.all-pages-menu nav {
+    display: flex;
+}
+
+.menu-icon {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        visibility: visible;
+    }
+
+    .menu-description p {
+        opacity: 1;
+    }
+
+    .all-pages-menu {
+        position: absolute;
+        left: -100%;
+        width: 100px;
+        height: fit-content;
+    }
+
+    .all-pages-menu nav {
+        display: block;
+    }
+}

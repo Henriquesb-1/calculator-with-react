@@ -1,0 +1,36 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-links-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    width: 100%;
+}
+
+.main-menu-item {
+    margin: 30px 15px;
+    padding: 15px;
+}
+
+.main-menu-item:hover {
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-links-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-menu-item {
+        margin: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-links-container {
+        grid-template-columns: 1fr;
+    }
+}
