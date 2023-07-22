@@ -8,9 +8,14 @@ import Pitagoras from "../components/pitagoras/Pitagoras";
 import Financing from "../components/financing/Financing";
 import Temperature from "../components/temperature/Temperature";
 import Footer from "../components/template/footer/Footer";
+import ChangeTheme from "../components/template/changeTheme/ChangeTheme";
+import useTheme from "../context/hook/useTheme";
+
+import "./pages.css";
 
 export default function Calculators() {
     const { calculator } = useParams();
+    const { theme } = useTheme();
 
     function renderCalculator() {
         switch (calculator) {
@@ -34,13 +39,16 @@ export default function Calculators() {
     }
 
     return (
-        <>
+        <main className={`App ${theme}`} style={{backgroundColor: theme === "dark" ? "#111": "#999", height: "100vh"}}>
             <div className="shorcut-container" style={{display: "flex", justifyContent: "center"}}>
                 <CalculatorsShortCut />
             </div>
+
+            <ChangeTheme />
+
             {renderCalculator()}
 
             <Footer />
-        </>
+        </main>
     )
 }
