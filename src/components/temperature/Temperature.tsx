@@ -10,12 +10,12 @@ export default function Temperature() {
     const [temperatureInput, setTemperatureInput] = useState<number>(0);
     const [convertTo, setConvertTo] = useState<number>(0);
 
-    const [results, setResults] = useState<TemperatureModel>(new TemperatureModel(temperatureInput));
+    const [temperature, setTemperature] = useState<TemperatureModel>(new TemperatureModel(temperatureInput));
 
     const [showResults, setShowResults] = useState<boolean>(false);
 
     function calc() {
-        setResults(new TemperatureModel(temperatureInput));
+        setTemperature(new TemperatureModel(temperatureInput));
         setShowResults(true);
     }
 
@@ -25,32 +25,32 @@ export default function Temperature() {
         if (convertTo == 0) {
             element = <>
                 <p>Para Fahrenheit:</p>
-                <p>F° = ({results.temperature}°C * 1.8) + 32</p>
-                <p>{results.temperature}°C equivale a {results.fromCelciusToFahrenheit()}° Fahrenheit</p>
+                <p>F° = ({temperature.temperature}°C * 1.8) + 32</p>
+                <p>{temperature.temperature}°C equivale a {temperature.fromCelciusToFahrenheit()}° Fahrenheit</p>
 
                 <p>Para Kelvins:</p>
-                <p>C° = {results.temperature} + 273</p>
-                <p>{results.temperature}°C equivale a {results.fromCelciusToKelvins()}° Kelvins</p>
+                <p>C° = {temperature.temperature} + 273</p>
+                <p>{temperature.temperature}°C equivale a {temperature.fromCelciusToKelvins()}° Kelvins</p>
             </>
         } else if (convertTo == 1) {
             element = <>
                 <p>Para Celsius:</p>
-                <p>F° = ({results.temperature}°C - 32) / 1.8</p>
-                <p>{results.temperature}°F equivale a {results.fromFahrenheitToCelsius()}° Celsius</p>
+                <p>F° = ({temperature.temperature}°C - 32) / 1.8</p>
+                <p>{temperature.temperature}°F equivale a {temperature.fromFahrenheitToCelsius()}° Celsius</p>
 
                 <p>Para Kelvins:</p>
-                <p>K° = ({results.temperature}°F - 32) * 5/9 + 273</p>
-                <p>{results.temperature}°F equivale a {results.fromFahrenheitToKelvins()}° Kelvins</p>
+                <p>K° = ({temperature.temperature}°F - 32) * 5/9 + 273</p>
+                <p>{temperature.temperature}°F equivale a {temperature.fromFahrenheitToKelvins()}° Kelvins</p>
             </>
         } else if (convertTo == 2) {
             element = <>
                 <p>Para Celsius:</p>
-                <p>C° = {results.temperature} - 273</p>
-                <p>{results.temperature}°K equivale a {results.fromKelvinsToCelsius()}° Celsius</p>
+                <p>C° = {temperature.temperature} - 273</p>
+                <p>{temperature.temperature}°K equivale a {temperature.fromKelvinsToCelsius()}° Celsius</p>
 
                 <p>Para Fahrenheit</p>
-                <p>F° = ({results.temperature} - 273) * 1.8 + 32</p>
-                <p>{results.temperature}°K equivale a {results.fromKelvinsToFahrenheit()}° Fahrenheit</p>
+                <p>F° = ({temperature.temperature} - 273) * 1.8 + 32</p>
+                <p>{temperature.temperature}°K equivale a {temperature.fromKelvinsToFahrenheit()}° Fahrenheit</p>
             </>
         }
 
@@ -74,7 +74,7 @@ export default function Temperature() {
 
                 {showResults ? (
                     <Results>
-                        <div style={{padding: "10px", backgroundColor: results.getBackgroundColor(convertTo), borderRadius: "15px"}}>
+                        <div style={{padding: "10px", backgroundColor: temperature.getBackgroundColor(convertTo), borderRadius: "15px"}}>
                             {renderResults()}
                         </div>
                     </Results>
