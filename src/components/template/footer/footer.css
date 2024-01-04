@@ -1,0 +1,26 @@
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid blue;
+    color: #fff;
+}
+
+.footer-container .author-name h3 {
+    font-size: .9rem;
+    margin: 5px;
+}
+
+.social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-link .link {
+    margin: 0 5px;
+}
+
+.social-media-link .link a {
+    cursor: pointer;
+}

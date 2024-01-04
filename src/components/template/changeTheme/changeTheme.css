@@ -1,0 +1,25 @@
+.theme-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 80px;
+    height: 30px;
+
+    margin: 10px;
+    border-radius: 25px;
+
+    background-color: rgb(189, 189, 3);
+    cursor: pointer;
+}
+
+.theme-icon {
+    position: relative;
+    right: 0;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.theme-icon img {
+    height: 30px;
+}

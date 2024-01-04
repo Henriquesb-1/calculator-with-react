@@ -1,0 +1,28 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .button {
+    margin: 10px;
+}
+
+.buttons .button button {
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.buttons .button button:hover {
+    transform: scale(.93, .93);
+}
+
+.buttons .submit-button button {
+    background-color: rgb(78, 158, 71);
+}
+.buttons .reset-button button {
+    background-color: rgb(126, 126, 126);
+}
