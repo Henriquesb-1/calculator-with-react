@@ -1,10 +1,10 @@
-import bhaskaraCover from "../../../assets/bhaskara/bhaskara-back.png";
-import financingCover from "../../../assets/financing/car.png";
-import pitagorasCover from "../../../assets/pitagoras/pitagoras-back.png";
-import imcCover from "../../../assets/imc/imc-back.png";
-import temperatureCover from "../../../assets/temperature/temperature-cover.png";
-import currenceCover from "../../../assets/currence/currence-cover.png";
-import factorizationCover from "../../../assets/factorization/factorization-cover.png";
+import bhaskaraCover from "../../../assets/bhaskara-back.png";
+import financingCover from "../../../assets/car.png";
+import pitagorasCover from "../../../assets/pitagoras-back.png";
+import imcCover from "../../../assets/imc-back.png";
+import temperatureCover from "../../../assets/temperature-cover.png";
+import currenceCover from "../../../assets/currence-cover.png";
+import factorizationCover from "../../../assets/factorization-cover.png";
 
 import LinkBox from "./LinkBox";
 

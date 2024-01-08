@@ -46,13 +46,13 @@
 }
 
 .return { background-image: url('../../../assets/return.png'); }
-.bhaskara { background-image: url('../../../assets/bhaskara/bhaskara-back.png');}
-.currence { background-image: url('../../../assets/currence/currence-cover.png');}
-.factorization { background-image: url('../../../assets/factorization/factorization-cover.png');}
-.financing { background-image: url('../../../assets/financing/car.png');}
-.imc { background-image: url('../../../assets/imc/imc-back.png');}
-.pitagoras { background-image: url('../../../assets/pitagoras/pitagoras-back.png');}
-.temperature { background-image: url('../../../assets/temperature/temperature-cover.png');}
+.bhaskara { background-image: url('../../../assets/bhaskara-back.png');}
+.currence { background-image: url('../../../assets/currence-cover.png');}
+.factorization { background-image: url('../../../assets/factorization-cover.png');}
+.financing { background-image: url('../../../assets/car.png');}
+.imc { background-image: url('../../../assets/imc-back.png');}
+.pitagoras { background-image: url('../../../assets/pitagoras-back.png');}
+.temperature { background-image: url('../../../assets/temperature-cover.png');}
 
 @media screen and (max-width: 768px) {
     .menu-links {
