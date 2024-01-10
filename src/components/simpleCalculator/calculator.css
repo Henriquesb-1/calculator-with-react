@@ -41,11 +41,6 @@
     display: flex;
 }
 
-/* .calculator-buttons button {
-    width: 80px;
-    height: 80px;
-} */
-
 .special-button button {
     width: 110px;
 }
