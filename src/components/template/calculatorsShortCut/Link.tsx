@@ -1,15 +1,15 @@
 import "./link.css";
 
 interface LinksProps {
-    elementName: string;
+    backgroundClassName: string;
     link: string;
     label: string;
 }
 
-export default function Link({ elementName, link, label }: LinksProps) {
+export default function Link({ backgroundClassName, link, label }: LinksProps) {
     return (
         <div className="menu-links">
-            <div className={`${elementName} menu-item`}>
+            <div className={`${backgroundClassName} menu-item`}>
                 <a href={link}>
                     <div className="menu-description">
                         <p> {label} </p>

@@ -19,15 +19,15 @@ export default function CalculatorsShortCut() {
 
             <div className="all-pages-menu" style={{left: menuVisibility ? "0" : "-100%"}}>
                 <nav>
-                    <Link elementName="return" label="Main Page" link="/" />
-                    <Link elementName="calculator-shortcut" label="Calculadora" link="/calculator" />
-                    <Link elementName="bhaskara" label="Bhaskara" link="/bhaskara" />
-                    <Link elementName="currence" label="Conversor" link="/currence" />
-                    <Link elementName="factorization" label="Fatoração" link="/factorization" />
-                    <Link elementName="financing" label="Financimento" link="/financing" />
-                    <Link elementName="imc" label="Imc" link="/imc" />
-                    <Link elementName="pitagoras" label="Pitagoras" link="/pitagoras" />
-                    <Link elementName="temperature" label="Temperatura" link="/temperature" />
+                    <Link backgroundClassName="return" label="Main Page" link="/" />
+                    <Link backgroundClassName="calculator-shortcut" label="Calculadora" link="/calculator" />
+                    <Link backgroundClassName="bhaskara" label="Bhaskara" link="/bhaskara" />
+                    <Link backgroundClassName="currence" label="Conversor" link="/currence" />
+                    <Link backgroundClassName="factorization" label="Fatoração" link="/factorization" />
+                    <Link backgroundClassName="financing" label="Financimento" link="/financing" />
+                    <Link backgroundClassName="imc" label="Imc" link="/imc" />
+                    <Link backgroundClassName="pitagoras" label="Pitagoras" link="/pitagoras" />
+                    <Link backgroundClassName="temperature" label="Temperatura" link="/temperature" />
                 </nav>
             </div>
         </>
