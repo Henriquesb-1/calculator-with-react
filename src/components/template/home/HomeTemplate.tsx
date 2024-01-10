@@ -1,3 +1,4 @@
+import simpleCalculator from "../../../assets/simple-calculator.png";
 import bhaskaraCover from "../../../assets/bhaskara-back.png";
 import financingCover from "../../../assets/car.png";
 import pitagorasCover from "../../../assets/pitagoras-back.png";
@@ -15,6 +16,10 @@ export default function HomeTemplate() {
         <main>
             <nav className="main-nav">
                 <div className="menu-links-container">
+                    <div className="main-menu-item">
+                        <LinkBox link="/calculator" imageSrc={simpleCalculator} alt="Foto que ilustra uma calculadora" caption="Calculadora simples" />
+                    </div>
+
                     <div className="main-menu-item">
                         <LinkBox link="/bhaskara" imageSrc={bhaskaraCover} alt="Foto que ilustra a fórmula de Bhaskara" caption="Fórmula de Bhaskará" />
                     </div>

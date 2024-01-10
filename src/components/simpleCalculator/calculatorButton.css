@@ -1,0 +1,18 @@
+.calculator-button {
+    margin: 2px;
+}
+
+.calculator-button button {
+    width: 80px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.calculator-button button:focus {
+    background-color: #7c0000;
+}
+
+.calculator-button button:focus,
+.calculator-screen span {
+    color: #fff;
+}

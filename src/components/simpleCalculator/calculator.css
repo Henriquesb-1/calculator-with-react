@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "digital7-italic";
+    src: url("../../assets/font/Digital7Italic.ttf");
+}
+
+.calculator {
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid rgb(131, 3, 3);
+}
+
+.calculator-screen {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    text-align: end;
+    background-color: #000;
+    height: 100px;
+    padding: 15px;
+
+    font-family: "digital7-italic";
+}
+
+.calculator-screen .previous-value {
+    position: absolute;
+    top: 0;
+}
+
+.calculator-screen .previous-value span {
+    font-size: 1.2rem;
+}
+
+.calculator-screen .current-value span {
+    font-size: 2.5rem;
+}
+
+.calculator-buttons {
+    display: flex;
+}
+
+/* .calculator-buttons button {
+    width: 80px;
+    height: 80px;
+} */
+
+.special-button button {
+    width: 110px;
+}

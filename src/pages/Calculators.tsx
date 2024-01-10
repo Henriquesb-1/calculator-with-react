@@ -12,6 +12,7 @@ import ChangeTheme from "../components/template/changeTheme/ChangeTheme";
 import useTheme from "../context/hook/useTheme";
 
 import "./pages.css";
+import SimpleCalculator from "../components/simpleCalculator/SimpleCalculator";
 
 export default function Calculators() {
     const { calculator } = useParams();
@@ -19,6 +20,8 @@ export default function Calculators() {
 
     function renderCalculator() {
         switch (calculator) {
+            case "calculator":
+                return <SimpleCalculator />
             case "bhaskara":
                 return <Bhaskara />
             case "currence":

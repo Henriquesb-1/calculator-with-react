@@ -20,6 +20,7 @@ export default function CalculatorsShortCut() {
             <div className="all-pages-menu" style={{left: menuVisibility ? "0" : "-100%"}}>
                 <nav>
                     <Link elementName="return" label="Main Page" link="/" />
+                    <Link elementName="calculator-shortcut" label="Calculadora" link="/calculator" />
                     <Link elementName="bhaskara" label="Bhaskara" link="/bhaskara" />
                     <Link elementName="currence" label="Conversor" link="/currence" />
                     <Link elementName="factorization" label="Fatoração" link="/factorization" />

@@ -46,6 +46,7 @@
 }
 
 .return { background-image: url('../../../assets/return.png'); }
+.calculator-shortcut { background-image: url('../../../assets/simple-calculator.png'); }
 .bhaskara { background-image: url('../../../assets/bhaskara-back.png');}
 .currence { background-image: url('../../../assets/currence-cover.png');}
 .factorization { background-image: url('../../../assets/factorization-cover.png');}
